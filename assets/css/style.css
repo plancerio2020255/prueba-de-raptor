@@ -144,6 +144,14 @@
   width: 100%;
 }
 
+.bi-dash-circle {
+  font-size: 40px;
+}
+
+.bi-plus-circle {
+  font-size: 40px; 
+}
+
 .preguntas__container--item {
   background-color: #efefef;
   width: 1234px;
@@ -164,10 +172,13 @@
 
 .preguntas__container--summary {
   font-family: "Gotham Black", sans-serif;
-  padding: 35px;
+  padding: 25px;
   text-align: left;
   list-style: none;
   font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .preguntas__titulo {
@@ -184,6 +195,10 @@
   width: 100%;
   justify-content: center;
   align-items: center;
+}
+
+.material-symbols-outlined {
+  font-size: 40px !important;
 }
 
 /* --------------------Footer------------------------ */
