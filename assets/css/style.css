@@ -5,225 +5,228 @@
  * 3. Ubicaciones
  */
 
- /* --------------------Fonts------------------------ */
+/* --------------------Fonts------------------------ */
 
- @import url('https://fonts.cdnfonts.com/css/american-captain-2');
- @import url('https://fonts.cdnfonts.com/css/gotham');
+@import url("https://fonts.cdnfonts.com/css/american-captain-2");
+@import url("https://fonts.cdnfonts.com/css/gotham");
 
- /* --------------------Header------------------------ */
+/* --------------------Header------------------------ */
 
- .hero {
+.hero {
   width: 100%;
- }
+}
 
- .hero__element--image {
+.hero__element--image {
   width: 100%;
- }
+}
 
- .hero__element--image img{
+.hero__element--image img {
   width: 100%;
   object-fit: cover;
- }
+}
 
- /* --------------------Ubicaciones------------------------ */
- 
- .ubicaciones {
-    margin-top: 190px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 200px;
-    width: 100%;
- }
+/* --------------------Ubicaciones------------------------ */
 
- .ubicaciones__element--title {
-    font-family: 'Gotham Black', sans-serif;
-    font-size: 60px;
-    color: #D7191E;
-    margin-bottom: 6rem;
- }
+.ubicaciones {
+  margin-top: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 200px;
+  width: 100%;
+}
 
- .ubicaciones__element--subtitle {
-    font-family: 'Gotham Black', sans-serif;
-    font-size: 40px;
-    margin-bottom: 20px;
- }
+.ubicaciones__element--title {
+  font-family: "Gotham Black", sans-serif;
+  font-size: 60px;
+  color: #d7191e;
+  margin-bottom: 6rem;
+}
 
- .ubicaciones__element--grid {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    gap: 80px;
- }
+.ubicaciones__element--subtitle {
+  font-family: "Gotham Black", sans-serif;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
 
- .ubicaiones__item--grid--title {
-    font-family: 'Gotham Black', sans-serif;
-    color: #c5332c;
-    font-size: 25px;
- }
+.ubicaciones__element--grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 80px;
+}
 
- .ubicaciones__item--grid--subtitle{
-    font-family: 'Gotham', sans-serif;
-    font-weight: 700;
- }
+.ubicaiones__item--grid--title {
+  font-family: "Gotham Black", sans-serif;
+  color: #c5332c;
+  font-size: 25px;
+}
 
- .ubicaciones__item--grid {
-    background-color: #efefef;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 20px;
-    width: 601px;
-    padding: 41px 0 41px 0;
- }
+.ubicaciones__item--grid--subtitle {
+  font-family: "Gotham", sans-serif;
+  font-weight: 700;
+}
 
- .ubicaciones__separador {
-   width: 600px;
-   margin: 50px 0 0 0;
-   background-color: #DCDCDC;
-   border:none;
-   height: 3px;
- }
+.ubicaciones__item--grid {
+  background-color: #efefef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 601px;
+  padding: 41px 0 41px 0;
+}
 
- /* --------------------Galeria------------------------ */
+.ubicaciones__separador {
+  width: 600px;
+  margin: 50px 0 0 0;
+  background-color: #dcdcdc;
+  border: none;
+  height: 3px;
+}
 
- .galeria {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   margin-bottom: 50px;
-   width: 100%;
- }
+/* --------------------Galeria------------------------ */
 
- .galeria__title {
-   font-family: 'Gotham Black', sans-serif;
-   font-size: 60px;
-   color: #D7191E;
-   font-weight: 700;
-   padding-bottom: 8rem;
- }
+.galeria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+  width: 100%;
+}
 
- .galeria__container {
-   width: 1250px;
-   background: rgb(239,239,239);
-   background: linear-gradient(180deg, rgba(239,239,239,1) 0%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   align-items: center;
-   padding: 30px;
-   flex-wrap: wrap;
-   gap: 30px;
- }
+.galeria__title {
+  font-family: "Gotham Black", sans-serif;
+  font-size: 60px;
+  color: #d7191e;
+  font-weight: 700;
+  padding-bottom: 8rem;
+}
 
- .galeria__container--item{
-   width: 350px;
-   height: 350px;
-   object-fit: cover;   
- }
+.galeria__container {
+  width: 1250px;
+  background: rgb(239, 239, 239);
+  background: linear-gradient(
+    180deg,
+    rgba(239, 239, 239, 1) 0%,
+    rgba(255, 255, 255, 1) 100%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
 
- /* --------------------Preguntas frecuentes------------------------ */
+.galeria__container--item {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
 
- .preguntas {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   margin-bottom: 30px;
-   gap: 20px;
-   width: 100%;
-  }
+/* --------------------Preguntas frecuentes------------------------ */
 
- .preguntas__container--item {
-   background-color: #EFEFEF;
-   width: 1234px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   margin-bottom: 30px;
- }
+.preguntas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 20px;
+  width: 100%;
+}
 
- .preguntas__container--item p {
-   background-color: #F9FAFA;
-   height: 100%;
-   padding: 25px 90px 25px 40px;
-   font-family: 'Gotham', sans-serif;
-   font-size: 20px;
- }
+.preguntas__container--item {
+  background-color: #efefef;
+  width: 1234px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
 
- .preguntas__container--summary{
-   font-family: 'Gotham Black', sans-serif;
-   padding: 35px;
-   text-align: left;
-   list-style: none;
- }
+.preguntas__container--item p {
+  background-color: #f9fafa;
+  height: 100%;
+  padding: 25px 90px 25px 40px;
+  font-family: "Gotham", sans-serif;
+  font-size: 20px;
+}
 
- .preguntas__titulo {
-   font-size: 60px;
-   font-family: 'Gotham Black', sans-serif;
-   color: #D7191E;
-   padding-bottom: 2.8rem;
- }
+.preguntas__container--summary {
+  font-family: "Gotham Black", sans-serif;
+  padding: 35px;
+  text-align: left;
+  list-style: none;
+}
 
- /* --------------------Latas------------------------ */
- 
- .latas {
-   display: flex;
-   width: 100%;
-   justify-content: center;
-   align-items: center;
- }
+.preguntas__titulo {
+  font-size: 60px;
+  font-family: "Gotham Black", sans-serif;
+  color: #d7191e;
+  padding-bottom: 2.8rem;
+}
 
- /* --------------------Footer------------------------ */
+/* --------------------Latas------------------------ */
 
- .footer {
-   width: 100%;
-   background-image: url("../uploads/footer-img.png");
-   background-repeat: no-repeat;
-   background-size: cover;
- }
+.latas {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
 
- /* --------------------Responsive------------------------ */
+/* --------------------Footer------------------------ */
 
- @media (max-width: 1291px) {
+.footer {
+  width: 100%;
+  background-image: url("../uploads/footer-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* --------------------Responsive------------------------ */
+
+@media (max-width: 1291px) {
   .galeria__container {
     width: 1050px;
-    background: rgb(239,239,239);
+    background: rgb(239, 239, 239);
   }
-  .galeria__container--item{
+  .galeria__container--item {
     width: 300px;
     height: 300px;
-    object-fit: cover;   
+    object-fit: cover;
   }
   .preguntas__container--item {
-    background-color: #EFEFEF;
+    background-color: #efefef;
     width: 1034px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
   }
- 
- }
+}
 
- @media (max-width: 1099px) {
-
+@media (max-width: 1099px) {
   .galeria__container {
     width: 850px;
-    background: rgb(239,239,239);
+    background: rgb(239, 239, 239);
   }
-  .galeria__container--item{
+  .galeria__container--item {
     width: 200px;
     height: 200px;
-    object-fit: cover;   
+    object-fit: cover;
   }
   .preguntas__container--item {
-    background-color: #EFEFEF;
+    background-color: #efefef;
     width: 934px;
     display: flex;
     align-items: center;
@@ -231,12 +234,17 @@
     margin-bottom: 30px;
   }
 
-  .ubicaciones__item--grid { 
+  .ubicaciones__item--grid {
     width: 750px;
- }
+  }
 
- .ubicaiones__item--grid--title {
-  font-size: 2em;
+  .ubicaiones__item--grid--title {
+    font-size: 2.5em;
+  }
+  .ubicaciones__item--grid--subtitle{
+    font-size: 1.7em;
+ }
+ .preguntas__container--summary {
+  font-size: 1.8em;
 }
-
- }
+}
