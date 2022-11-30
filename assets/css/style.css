@@ -191,9 +191,6 @@
  /* --------------------Responsive------------------------ */
 
  @media (max-width: 1291px) {
-  .ubicaciones__item--grid { 
-    width: 750px;
- }
   .galeria__container {
     width: 1050px;
     background: rgb(239,239,239);
