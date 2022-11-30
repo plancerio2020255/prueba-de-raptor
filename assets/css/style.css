@@ -151,6 +151,7 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+  flex-wrap: wrap;
 }
 
 .preguntas__container--item p {
@@ -246,5 +247,8 @@
  }
  .preguntas__container--summary {
   font-size: 1.8em;
+}
+.preguntas__container--item p {
+  font-size: 1.7em;
 }
 }
