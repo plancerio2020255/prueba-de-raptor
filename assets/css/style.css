@@ -100,6 +100,28 @@
   width: 100%;
 }
 
+.galeria__button--load-more {
+  border: none;
+  background-color: transparent;
+  font-family: 'Gotham', sans-serif;
+  font-size: 23px;
+  font-weight: 500;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  margin-top: 25px;
+}
+
+.bi-chevron-down {
+  font-weight: 900;
+  font-size: 40px;
+}
+
 .galeria__title {
   font-family: "Gotham Black", sans-serif;
   font-size: 60px;
@@ -130,6 +152,16 @@
   width: 350px;
   height: 350px;
   object-fit: cover;
+}
+
+.galeria__container--box {
+  display: none;
+}
+
+.galeria__container--box:nth-child(1),
+.galeria__container--box:nth-child(2),
+.galeria__container--box:nth-child(3) {
+  display: flex;
 }
 
 /* --------------------Preguntas frecuentes------------------------ */
@@ -238,8 +270,8 @@
     background: rgb(239, 239, 239);
   }
   .galeria__container--item {
-    width: 200px;
-    height: 200px;
+    width: 500px;
+    height: 500px;
     object-fit: cover;
   }
   .preguntas__container--item {
@@ -249,6 +281,14 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
+  }
+
+  .bi-dash-circle {
+    font-size: 50px;
+  }
+  
+  .bi-plus-circle {
+    font-size: 50px; 
   }
 
   .ubicaciones__item--grid {
