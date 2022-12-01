@@ -86,25 +86,7 @@
   overflow-y: scroll;
 }
 
-.ubicaciones__box::-webkit-scrollbar {
-  width: 1.5em;
-  margin-block: 0 0 0 15px;
-}
 
-.ubicaciones__box::-webkit-scrollbar-track {
-  background: #efefef;
-  border-radius: 100vw;
-}
-
-.ubicaciones__box::-webkit-scrollbar-thumb {
-  background: #d7191e;
-  border-radius: 100vw;
-  height: 250px;
-}
-
-.ubicaciones__box::-webkit-scrollbar-thumb:hover {
-  background: #dd363b;
-}
 
 .ubicaciones__item--grid {
   background-color: #efefef;
