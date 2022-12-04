@@ -67,6 +67,8 @@ $(document).ready(function () {
     slidesToShow: 3,
     arrows: true,
     slidesToScroll: 3,
+    prevArrow: $('.atras'),
+    nextArrow: $('.adelantar'),
     responsive: [
       {
         breakpoint: 1024,
