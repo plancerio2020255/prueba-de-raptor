@@ -67,7 +67,11 @@
 .slick-next:before
 {
     font-family: 'slick';
+<<<<<<< HEAD
     font-size: 70px;
+=======
+    font-size: 20px;
+>>>>>>> 985427708dce45df9de94ef237e3025fd8ec744e
     line-height: 1;
 
     opacity: .75;
