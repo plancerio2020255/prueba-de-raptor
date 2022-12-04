@@ -35,7 +35,6 @@
   flex-direction: column;
   margin-bottom: 200px;
   width: 100%;
-  height: 1000px;
 }
 
 .ubicaciones__element--title {
@@ -46,11 +45,24 @@
 }
 
 .ubicaciones__container--items {
-  display: flex;
+  display: flex !important;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 100px;
+}
+
+.slick-track {
+  opacity: 1;
+  width: 65561px;
+  transform: translate3d(0px, 0px, 0px);
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+
+.ubicaciones__box {
+  width: 80%;
 }
 
 .ubicaciones__element--subtitle {
@@ -77,33 +89,6 @@
 .ubicaciones__item--grid--subtitle {
   font-family: "Gotham", sans-serif;
   font-weight: 700;
-}
-
-.ubicaciones__box {
-  width: 75vw;
-  height: 700px;
-  overflow: hidden;
-  overflow-y: scroll;
-}
-
-.ubicaciones__box::-webkit-scrollbar {
-  width: 1em;
-  margin-block: 0 0 0 15px;
-}
-
-.ubicaciones__box::-webkit-scrollbar-track {
-  background: #efefef;
-  border-radius: 100vw;
-}
-
-.ubicaciones__box::-webkit-scrollbar-thumb {
-  background: #d7191e;
-  border-radius: 100vw;
-  height: 250px;
-}
-
-.ubicaciones__box::-webkit-scrollbar-thumb:hover {
-  background: #dd363b;
 }
 
 .ubicaciones__item--grid {
@@ -164,17 +149,16 @@
   color: #d7191e;
   font-weight: 700;
   padding-bottom: 8rem;
+  text-align: center;
 }
 
 .galeria__container {
   width: 1250px;
   background: rgb(239, 239, 239);
-  background: linear-gradient(
-    180deg,
-    rgba(239, 239, 239, 1) 0%,
-    rgba(255, 255, 255, 1) 100%,
-    rgba(255, 255, 255, 1) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(239, 239, 239, 1) 0%,
+      rgba(255, 255, 255, 1) 100%,
+      rgba(255, 255, 255, 1) 100%);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -190,14 +174,9 @@
   object-fit: cover;
 }
 
-.galeria__container--box {
-  display: none;
-}
-
-.galeria__container--box:nth-child(1),
-.galeria__container--box:nth-child(2),
-.galeria__container--box:nth-child(3) {
-  display: flex;
+.slick-next:before,
+.slick-prev:before {
+  color: #c5332c !important;
 }
 
 /* --------------------Preguntas frecuentes------------------------ */
@@ -257,6 +236,7 @@
   font-family: "Gotham Black", sans-serif;
   color: #d7191e;
   padding-bottom: 2.8rem;
+  text-align: center;
 }
 
 /* --------------------Latas------------------------ */
@@ -272,14 +252,14 @@
   font-size: 40px !important;
 }
 
-/* --------------------Footer------------------------ */
+/* --------------------Slick Slider arrows------------------------ */
 
-.footer {
-  width: 100%;
-  background-image: url("../uploads/footer-img.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+.slick-next:before, .slick-prev:before{
+  font-size: 70px !important;
 }
+
+/* --------------------Slick Slider arrows------------------------ */
+
 
 /* --------------------Responsive------------------------ */
 
@@ -288,11 +268,13 @@
     width: 1050px;
     background: rgb(239, 239, 239);
   }
+
   .galeria__container--item {
     width: 300px;
     height: 300px;
     object-fit: cover;
   }
+
   .preguntas__container--item {
     background-color: #efefef;
     width: 1034px;
@@ -304,15 +286,25 @@
 }
 
 @media (max-width: 1099px) {
+  .galeria__container--box {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1099px) {
   .galeria__container {
     width: 850px;
     background: rgb(239, 239, 239);
   }
+
   .galeria__container--item {
     width: 500px;
     height: 500px;
     object-fit: cover;
   }
+
   .preguntas__container--item {
     background-color: #efefef;
     width: 934px;
@@ -337,12 +329,15 @@
   .ubicaiones__item--grid--title {
     font-size: 2.5em;
   }
+
   .ubicaciones__item--grid--subtitle {
     font-size: 1.7em;
   }
+
   .preguntas__container--summary {
     font-size: 2em;
   }
+
   .preguntas__container--item p {
     font-size: 1.9em;
   }
